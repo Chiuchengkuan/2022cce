@@ -70,3 +70,92 @@ int main()
 
 }
 ```
+WEEK07
+# 比較 int 整數 及 long long int 很長很長的整數 的差別
+```cpp
+#include <stdio.h>
+int main()
+{
+   int n=9876543210;
+   printf("int ¦L¥X¨Ó %d\n", n);
+
+   long long int a=9876543210;
+   printf("long long int ¦L¥X¨Ó %lld\n", a);
+
+}
+```
+# 用 long long int 很長很長的整數 來計算最大公因數
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a, b;
+    scanf("%lld %lld", &a, &b);
+
+    long long int ans;
+    for( long long int i=1; i<=a; i++){
+        if (a%i==0 && b%i==0) ans=i;
+    }
+    printf("最大公因數是:%lld\n", ans);
+
+}
+```
+# 輾轉相除法 來計算最大公因數
+```cpp
+#include <stdio.h>
+int main()
+{
+    long long int a, b, c;
+    scanf("%lld %lld", &a, &b);
+    while(1){
+        c = a % b;
+        printf("a:%lld b:%lld c:%lld\n", a, b, c);
+        if( c==0 ) break;
+        a = b;
+        b = c;
+    }
+    printf("答案是 : %lld\n",b);
+}
+```
+# 利用「剝皮」的技巧。可以從高位數來剝
+‵``cpp
+#include <stdio.h>
+int main()
+{
+  int n;
+  scanf("%d", &n);
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+  printf("瞷计:%d\n", n%10);
+  n = n/10;
+
+}
+```
+
+
