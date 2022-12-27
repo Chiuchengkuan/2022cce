@@ -118,7 +118,7 @@ int main()
 }
 ```
 # 利用「剝皮」的技巧。可以從高位數來剝
-‵``cpp
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -157,7 +157,7 @@ int main()
 
 }
 ```
-#判斷1個質數
+# 判斷1個質數
 ```cpp
 #include <stdio.h>
 int main()
@@ -173,7 +173,7 @@ int main()
     else printf("%d不好,不是質數",n);
 }
 ```
-#-第07週實習課堂作業-列出質數
+# 第07週實習課堂作業-列出質數
 ```cpp
 #include <stdio.h>
 int main()
@@ -192,7 +192,7 @@ int main()
    }
 }
 ```
-#輸入5個數字, 把它們加起來
+# 輸入5個數字, 把它們加起來
 ```cpp
 #include <stdio.h>
 int main()
@@ -209,7 +209,7 @@ int main()
 }
 
 ```
-#利用for寫出直角三角形
+# 利用for寫出直角三角形
 ```cpp
 #include <stdio.h>
 int main()
@@ -227,7 +227,7 @@ int main()
     }
 }
 ```
-#用2個for迴圈來寫出直角三角形
+# 用2個for迴圈來寫出直角三角形
 ```cpp
 #include <stdio.h>
 int main()
@@ -245,7 +245,7 @@ int main()
 }
 
 ```
-#用2個while迴圈, 畫出有空格、有星星的右方直角三角形
+# 用2個while迴圈, 畫出有空格、有星星的右方直角三角形
 ```cpp
 #include <stdio.h>
 int main()
