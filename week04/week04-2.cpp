@@ -1,12 +1,15 @@
 #include <stdio.h>
-int main()
-{
-    for(int n=1; n<2000; n++) {
-        if(n%8==6 && n%9==7 && n%15==13) {
-            printf("\n現在n: %d\n", n);
-            printf("用8除餘%d\n", n%8);
-            printf("用9除餘%d\n", n%9);
-            printf("用15除餘%d\n", n%15);
-        }
+#include<string.h>
+int main(){
+    char line[50];
+    scanf("%s",line);
+
+    int N = strlen(line);
+    int yes=0;
+    for(int i=0;i<N;i++){
+    	if(line[i]==line[N-1-i]) yes++;
     }
+    if(yes==N) printf("全部都yes收齊,是迴文\n");
+    else printf("不是全部都yes收齊,就不是迴文\n");
+
 }
