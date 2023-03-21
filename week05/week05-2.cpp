@@ -1,12 +1,11 @@
 #include <stdio.h>
-int main()
-{
-    int a=5;
-    while (a>0)
-    {
-        printf("a¬O%d, a>0\n", a);
+int main(){
+    int a = 10;
+    int *p = &a;
 
-        a--;
-    }
+    printf("a:%d address: %d\n",a,&a);
+    printf("p:%d point to %d\n",p,*p);
 
+    *p = 20;
+    printf("now a is:%d\n",a);
 }

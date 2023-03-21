@@ -1,17 +1,18 @@
 #include <stdio.h>
-int main()
-{
-    for (int i=0; i<3; i++)   ///012
-    {
-        printf("迴圈(電腦習慣)是i是%d\n", i);
-    }
-    for (int i=1; i<3; i++)    ///123
-    {
-        printf("迴圈(人類習慣)是i是%d\n", i);
-    }
-    for (int a=3; a>0; a--)    ///321
-    {
-        printf("倒過來的迴圈a是%d\n", a);
-    }
+int main(){
+    int used[26] = { };
 
+    char c;
+    while( scanf("%c", &c)==1){
+            int i;
+            if(c>='A' && c<='Z') i = c - 'A';
+            if(c>='a' && c<='z') i = c - 'a';
+            used[i] ++;
+    }
+    int bad=0;
+    for(int i=0;i<26; i++){
+        if(used[i]==0) bad=1;
+    }
+    if(bad==0) printf("Yes");
+    else printf("No");
 }

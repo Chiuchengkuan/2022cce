@@ -1,13 +1,10 @@
 #include <stdio.h>
-int main()
-{
-    for (int i=5; i>0; i--)
-    {
-        for (int j=0; j<i; j++)
-        {
-            printf("*");
-        }
+int main(){
+    int a[5] = {10,20,30,40,50};
+    int * p;
 
-        printf("i :%d¬P¬P\n",i);
+    p = a;
+    for(int i=0; i<5; i++){
+        printf("a[i]: %d  p[i]: %d\n",a[i],p[i]);
     }
 }

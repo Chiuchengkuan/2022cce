@@ -1,17 +1,12 @@
-#include <stdio.h>
-int main()
-{
-    printf("請輸入2個整數,要約分: ");
-    int a, b;
-    scanf("%d %d",&a,&b);
-    int ans;
-    for (int i=1; i<=a; i++)
-    {
-        if (a%i==0 && b%i==0)
-        {
-            ans=i;
+int removeDuplicates(int* nums, int numsSize){
+    int k=1;
+    for(int i=1;i<numsSize; i++){
+        if(nums[i-1]==nums[i]){
+
+        }else{
+            nums[k] = nums[i];
+            k++;
         }
     }
-    printf("ans: %d 可約分",ans);
+    return k;
 }
-

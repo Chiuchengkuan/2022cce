@@ -1,17 +1,12 @@
 #include <stdio.h>
-int main()
-{
-    ///int a=3;
-    /// while (a>0){
-    ///printf("a¬O%d, a>0\n", a);
+int main(){
+    int a = 10,b = 20;
+    int * p1 = &a;
+    int * p2 = &b;
+    printf("a: %d b:%d\n",a,b);
 
-    ///a--;
-    ///}
-
-    for (int a=5; a>0; a--)
-    {
-        printf("a¬O%d, a>0\n", a);
-    }
-
-
+    printf("a: %d b:%d\n",a,b);
+    p2 = &a;
+    *p2 = 40;
+    printf("a: %d b:%d\n",a,b);
 }
